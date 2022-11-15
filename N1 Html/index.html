@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Composicion del elemento head -->
+
+    <!-- Titulo de la pagina o documento -->
+    <title>Aprendiendo HTML</title>
+
+    <!-- Linkeando icono del documento -->
+    <link rel="icon" type="image/x-icon" href="./favicon.png" />
+
+    <!-- Linkeando fuente desde un cdn-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Distintos tipos de meta tags (SEO)-->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Mi primera pagina web" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, paginaWeb" />
+    <meta name="author" content="Facundo Diaz" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Linkeando hojas de estilo externas -->
+    <link reel="stylesheet" href="./css/styles.css" />
+
+    <!-- Estilos en el mismo documento-->
+    <style>
+      * {
+        font-family: Roboto, sans-serif;
+      }
+    </style>
+
+    <!-- Javascript en el mismo documento -->
+    <script>
+      console.log("Hola mundo");
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Hola mundo</h1>
+      <hr />
+      <p>Html Semantico</p>
+      <hr />
+      <h1>Hola soy una etiqueta H1</h1>
+      <h2>Hola soy una etiqueta H2</h2>
+      <h3>Hola soy una etiqueta H3</h3>
+      <h4>Hola soy una etiqueta H4</h4>
+      <h5>Hola soy una etiqueta H5</h5>
+      <h6>Hola soy una etiqueta H6</h6>
+
+      <p>Hola soy un parrafo</p>
+      <p>Hola soy un parrafo con <b>una etiqueta b</b></p>
+      <p>Hola soy un parrafo con <strong>una etiqueta strong</strong></p>
+      <p>Hola soy un parrafo con <i>una etiqueta i</i></p>
+      <p>Hola soy un parrafo con <em>una etiqueta em </em></p>
+      <p>Hola soy un parrafo con <mark>una etiqueta mark </mark></p>
+      <p>Hola soy un parrafo con <del>una etiqueta del </del></p>
+      <p>Hola soy un parrafo con <sup>una etiqueta sup </sup></p>
+      <p>Hola soy un parrafo con <sub>una etiqueta sub </sub></p>
+    </div>
+
+    <div>
+      <h1>Links en HTML</h1>
+      <!-- Ruta absoluta-->
+      <a href="https://www.google.es" target="_blank" rel="noreferer noopener">
+        Ruta absoluta a google</a
+      >
+      <br />
+      <!-- Ruta relativa-->
+      <a href="./segundaPagina.html"> Ruta relativa a otra pagina</a>
+      <br />
+      <!-- Sorpresa -->
+      <a href="./sorpresa.html"> Clickea para ver una sorpresa</a>
+      <br />
+      <!-- Link a formularios-->
+      <a href="./forms.html"> Clickea para ver formularios</a>
+
+      <br />
+      <!-- Link a listas-->
+      <a href="./lists.html"> Clickea para ver listas</a>
+
+      <br />
+      <!-- Link a tablas-->
+      <a href="./tablas.html"> Clickea para ver tablas</a>
+      <br />
+      <!-- Link a html semantico-->
+      <a href="./semantic.html">Clickea para ver la pagina de html semantico</a>
+    </div>
+  </body>
+</html>

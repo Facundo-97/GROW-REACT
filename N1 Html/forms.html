@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios con HTML</title>
+  </head>
+  <body>
+    <a href="./index.html">Volver al index</a>
+    <h1>Formularios con html</h1>
+    <hr />
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Creando formularios</legend>
+        <div>
+          <label for="firstName">Nombre</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="Ingrese su nombre"
+            required
+            autocomplete="off"
+          />
+        </div>
+
+        <div>
+          <label for="cantidad">Cantidad</label>
+          <input
+            type="number"
+            name="cantidad"
+            id="cantidad"
+            placeholder="Cantidad a elegir"
+            required
+            autocomplete="off"
+            min="1"
+            max="12"
+          />
+        </div>
+
+        <div>
+          <label for="telefono">Telefono</label>
+          <input
+            type="tel"
+            name="telefono"
+            id="telefono"
+            placeholder="Ingrese su numero de telefono"
+            required
+            autocomplete="off"
+            pattern="[0-9]{10}"
+          />
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Ingrese su email"
+            required
+            autocomplete="off"
+          />
+        </div>
+        <div>
+          <label for="password">Contraseña</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Ingrese su contrasea"
+            required
+            autocomplete="off"
+          />
+        </div>
+
+        <div>
+          <label for="paises"> Que pais sale campeon del mundial?</label>
+          <select id="paises" name="paises">
+            <option value="Argentina">Argentina</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Argentina">Argentina</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Checkbox</legend>
+        <div>
+          <input
+            type="checkbox"
+            id="pokemon1"
+            name="pokemon"
+            value="Charmander"
+          />
+          <label for="pokemon1">Charmander</label>
+
+          <input type="checkbox" id="pokemon2" name="pokemon" value="Pikachu" />
+          <label for="pokemon2">Pikachu</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Radio</legend>
+
+        <input type="radio" id="bici" name="vehiculo" value="bici" />
+        <label for="bici"> Bici</label>
+
+        <input type="radio" id="auto" name="vehiculo" value="auto" />
+        <label for="auto"> Auto</label>
+
+        <input type="radio" id="moto" name="vehiculo" value="moto" />
+        <label for="moto"> Moto</label>
+      </fieldset>
+
+      <button submit>Enviar</button>
+    </form>
+  </body>
+</html>
