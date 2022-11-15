@@ -1,0 +1,59 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+.title {
+  font-weight: 600;
+}
+
+#separador {
+  height: 5px;
+  background-color: bisque;
+}
+
+.container h1 {
+  color: red;
+}
+
+ul {
+  border: 1px solid blue;
+}
+
+ul li {
+  border: 1px solid black;
+}
+
+
+li:first-child {
+  color: blue;
+  padding: 10px 5px 8px 20px;
+  margin : 5px;
+}
+
+li:last-child {
+  color: green
+}
+
+li:nth-child(2) {
+  color: red
+}
+
+.nota {
+  border: 4px solid #666;
+  padding: .5em;
+}
+
+.nota.warning {
+  border-color: orange;
+  font-weight: bold;
+}
+
+.nota.warning.warning2 {
+  background-color: #666;
+}
+
+.nota.danger {
+  border-color: red;
+  font-weight: bold;
+}
