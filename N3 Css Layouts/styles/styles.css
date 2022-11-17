@@ -1,0 +1,121 @@
+:root {
+  --main-color: red;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flexbox {
+  width: 500px;
+  height: 500px;
+  border: 5px solid black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  border: 5px solid var(--main-color);
+  align-self: flex-start;
+  z-index: 100;
+  text-align: center;
+  background-color: white;
+}
+
+.caja {
+  width: 100px;
+  height: 100px;
+  border: 5px solid var(--main-color);
+}
+
+.caja.uno {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.caja.dos {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 500;
+}
+
+.caja.tres {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 500;
+
+}
+
+.caja.cuatro {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.gridContainer {
+  width: 500px;
+  height: 500px;
+  border: 5px solid black;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gridItem {
+  width: 100px;
+  height: 100px;
+  border: 5px solid var(--main-color);
+}
+
+.gridItem.uno {
+  grid-column: 1 /3;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+}
+
+.gridItem.dos {
+  grid-column: 3/5;
+  grid-row: 1/3;
+  width: 100%;
+  height: 100%;
+  border-color: black;
+}
+
+.gridItem.tres {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  width: 100%;
+  border-color: blue;
+  height: 100%;
+}
+
+.gridItem.cuatro {
+  grid-column: 1/5;
+  grid-row: 3/5;
+  height: 100%;
+  width: 100%;
+}
