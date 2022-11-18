@@ -33,14 +33,16 @@
 
       const appendItem = () => {
         let liChild = document.createElement("li");
-        liChild.innerHTML = `${inputValue.value} <button onclick="deleteItem(event)"> BORRAR</button>`;
-        document.getElementById("list").appendChild(liChild);
+        if(inputValue.value !== ""){
+          liChild.innerHTML = `${inputValue.value} <button onclick="deleteItem(event)"> BORRAR</button>`;
+          document.getElementById("list").appendChild(liChild);
+        }
       };
 
       const deleteItem = (event) => {
         let button = event.target;
         let elementoPadre = button.parentElement;
-        elementoPadre.addClassName("borrado")
+        elementoPadre.remove()
       };
     </script>
   </body>
